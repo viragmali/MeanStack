@@ -6,7 +6,7 @@
 <br><br>
 <input type="password" size="30" placeholder="Password" ng-model="password">
 <br><br>
-<button type="button"  ng-click="signin()">Sign In</button>
+<button type="button" class="btn" ng-click="signin(username,password)">Sign In</button>
 <br><br>
 <a href="#!/signup">Not a member? Signup</a>
 </div>
@@ -18,7 +18,7 @@
 <h3 ng-repeat="meow in meows">
     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
     {{meow.text}}
-    <a><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+    <a><span class="glyphicon glyphicon-remove" aria-hidden="true" ng-click="removeMeow(meow)"></span></a>
 </h3>   
 </div>
 </div>
